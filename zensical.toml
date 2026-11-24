@@ -14,17 +14,36 @@ copyright = "Jurre Buunk"
 
 nav = [
   { "Home" = "index.md" },
-  { "Concepts" = [
-    "concepts/design.md",
+  { "Get started" = [
+    "get-started/index.md",
+    "get-started/access.md",
+    "get-started/first-change.md",
+    "get-started/repository.md",
   ] },
-  { "Reference" = [
-    "reference/firewall.md",
-    "reference/addresses.md",
+  { "Concepts" = [
+    "concepts/index.md",
+    "concepts/design.md",
+    "concepts/dns-and-time.md",
+  ] },
+  { "How-to" = [
+    "how-to/index.md",
+    "how-to/add-dns-override.md",
+    "how-to/add-firewall-rule.md",
+    "how-to/change-switch-port.md",
   ] },
   { "Operate" = [
+    "operate/index.md",
     "operate/router-and-switch.md",
-    "operate/rebuild.md",
     "operate/troubleshooting.md",
+    "operate/rebuild.md",
+  ] },
+  { "Reference" = [
+    "reference/index.md",
+    "reference/firewall.md",
+    "reference/addresses.md",
+    "reference/credentials.md",
+    "reference/glossary.md",
+    { "Plan ↗" = "https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md" },
   ] },
   # The other two doc sites, in their own colour.
   { "Cluster docs ↗" = "https://jurrebuunk.github.io/nix-hgd1-cluster/" },

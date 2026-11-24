@@ -22,51 +22,51 @@ The hgd1 docs are three sites, each covering only what its repo owns:
 
 <div class="grid cards" markdown>
 
--   :lucide-lightbulb:{ .lg .middle } **Design**
+-   :lucide-rocket:{ .lg .middle } **Get started**
 
     ---
 
-    The VLANs, the trunk, DNS and time, and why it's built this way.
+    Reach the router and switch, make a first change safely, tour the repo.
 
-    [:octicons-arrow-right-24: Network design](concepts/design.md)
+    [:octicons-arrow-right-24: Get started](get-started/index.md)
 
--   :lucide-shield:{ .lg .middle } **Firewall**
-
-    ---
-
-    What each VLAN may reach, the WAN forwards and device access.
-
-    [:octicons-arrow-right-24: Firewall](reference/firewall.md)
-
--   :lucide-map-pin:{ .lg .middle } **Addresses**
+-   :lucide-lightbulb:{ .lg .middle } **Concepts**
 
     ---
 
-    VLANs, the router and switch, switch ports and reserved ranges.
+    The VLAN design, the trunk, DNS and time, and why.
 
-    [:octicons-arrow-right-24: Addresses](reference/addresses.md)
+    [:octicons-arrow-right-24: Concepts](concepts/index.md)
 
--   :lucide-router:{ .lg .middle } **Router and switch**
-
-    ---
-
-    What's configured, how to reach them, and what a reboot interrupts.
-
-    [:octicons-arrow-right-24: Router and switch](operate/router-and-switch.md)
-
--   :lucide-cable:{ .lg .middle } **Rebuild**
+-   :lucide-wrench:{ .lg .middle } **How-to guides**
 
     ---
 
-    Bringing the network up from scratch without locking yourself out.
+    Add a DNS override or a firewall rule, change a switch port.
 
-    [:octicons-arrow-right-24: Rebuild the network](operate/rebuild.md)
+    [:octicons-arrow-right-24: How-to](how-to/index.md)
+
+-   :lucide-heart-pulse:{ .lg .middle } **Operate**
+
+    ---
+
+    The health check, the router and switch, and rebuilding the network.
+
+    [:octicons-arrow-right-24: Operate](operate/index.md)
+
+-   :lucide-book-open:{ .lg .middle } **Reference**
+
+    ---
+
+    Firewall policy, addresses and switch ports, credentials, the plan.
+
+    [:octicons-arrow-right-24: Reference](reference/index.md)
 
 -   :lucide-life-buoy:{ .lg .middle } **Troubleshooting**
 
     ---
 
-    No access, names that don't resolve, blocked traffic, missing logs.
+    Find the fix by symptom: no access, DNS, blocked traffic, missing logs.
 
     [:octicons-arrow-right-24: Troubleshooting](operate/troubleshooting.md)
 

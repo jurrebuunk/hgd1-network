@@ -89,12 +89,8 @@ table is in [Firewall](../reference/firewall.md).
 
 ### DNS and time
 
-OPNsense runs Unbound with DNSSEC for `lan.buunk.org` and serves NTP. Fixed
-addresses have host overrides such as `hgd1-hv01.lan.buunk.org`,
-`s3.lan.buunk.org`, `k8s.lan.buunk.org`, `mon.lan.buunk.org`,
-`api.lan.buunk.org` and `lab.buunk.org` (internal for now). Hosts also keep each other in
-`/etc/hosts`, so they resolve each other when the router is down. Ceph needs
-synced clocks, so hosts run chrony and prefer OPNsense.
+OPNsense resolves `lan.buunk.org` and serves NTP to every VLAN. See
+[DNS and time](dns-and-time.md).
 
 ### Game streaming
 
@@ -130,6 +126,8 @@ files outside Git, because they contain password hashes and keys.
 See [Troubleshooting](../operate/troubleshooting.md).
 
 ## Related
+
+- [DNS and time](dns-and-time.md)
 
 - [Addresses](../reference/addresses.md) · [Firewall](../reference/firewall.md)
 - On the cluster docs: [Remote access](https://jurrebuunk.github.io/nix-hgd1-cluster/concepts/remote-access/) (Cloudflare tunnel and WARP into these VLANs)
