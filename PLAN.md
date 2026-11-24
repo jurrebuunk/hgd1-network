@@ -40,6 +40,16 @@ switch the port roles, SNMP and logging.
    every run.
 4. Move the network pages from the handbook here and link back.
 
+## Known issues
+
+- **Unbound answers NOERROR (no address) for names under `lan.buunk.org`
+  that don't exist**, instead of NXDOMAIN (seen 2026-11-24 with
+  `dig @10.10.10.1 nonexistent-xyz.lan.buunk.org`). Resolvers that stop at
+  the first non-NXDOMAIN answer (musl) then fail. The k3s pods work around it
+  (their own resolver file without the search domain, in
+  `nix-hgd1-cluster`); the fix here is the zone's local-zone type (`static`
+  answers NXDOMAIN for unknown names).
+
 ## Visibility
 
 This repo is **private**: it describes the firewall in more detail than the
