@@ -38,7 +38,8 @@ switch the port roles, SNMP and logging.
    reports **no changes**.
 3. Only then make changes through Ansible, one at a time, with a backup before
    every run.
-4. Move the network pages from the handbook here and link back.
+4. ~~Move the network pages from the handbook here and link back.~~ Done:
+   `docs/`, its own site (hosting still open, see the issues).
 
 ## Known issues
 

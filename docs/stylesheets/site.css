@@ -1,0 +1,7 @@
+/* This site's colour (the three are defined in flatwork.css). */
+:root {
+  --site: var(--network);
+  --site-light: var(--network-light);
+  --site-dark: var(--network-dark);
+  --site-soft: var(--network-soft);
+}
