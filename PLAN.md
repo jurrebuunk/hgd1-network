@@ -39,7 +39,7 @@ switch the port roles, SNMP and logging.
 3. Only then make changes through Ansible, one at a time, with a backup before
    every run.
 4. ~~Move the network pages from the handbook here and link back.~~ Done:
-   `docs/`, its own site (hosting still open, see the issues).
+   `docs/`, published at https://jurrebuunk.github.io/hgd1-network/.
 
 ## Known issues
 
@@ -53,8 +53,10 @@ switch the port roles, SNMP and logging.
 
 ## Visibility
 
-This repo is **private**: it describes the firewall in more detail than the
-public cluster repo.
+This repo is **public**, like the docs it holds. Secrets (the OPNsense API
+key, the SNMP community, switch credentials) only ever go in encrypted, and
+router and switch exports stay outside Git: they contain password hashes and
+keys.
 
 ## Not yet
 
