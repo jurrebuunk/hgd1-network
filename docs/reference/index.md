@@ -13,6 +13,6 @@ Facts to look up. No explanations here; follow the links to
 - :lucide-map-pin: [**Addresses**](addresses.md): VLANs, router and switch, switch ports
 - :lucide-lock-keyhole: [**Credentials**](credentials.md): where every network credential lives
 - :lucide-book-a: [**Glossary**](glossary.md): the terms these docs use
-- :lucide-map: [**Plan**](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md): the Ansible takeover
+- :lucide-map: [**Roadmap**](roadmap.md): the Ansible takeover
 
 </div>

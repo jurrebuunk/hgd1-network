@@ -10,10 +10,10 @@ deliberately, backed up first.
 
 ## Current state (to take over, not to change)
 
-Built by hand in steps N0–N7 and documented in the handbook:
-[Network](https://jurrebuunk.github.io/nix-hgd1-cluster/concepts/network/),
-[Firewall](https://jurrebuunk.github.io/nix-hgd1-cluster/reference/firewall/),
-[Router and switch](https://jurrebuunk.github.io/nix-hgd1-cluster/operate/router-and-switch/).
+Built by hand in steps N0–N7 and documented in the network docs:
+[Network design](https://jurrebuunk.github.io/hgd1-network/concepts/design/),
+[Firewall](https://jurrebuunk.github.io/hgd1-network/reference/firewall/),
+[Router and switch](https://jurrebuunk.github.io/hgd1-network/operate/router-and-switch/).
 Covers VLANs 10/20/30/40/100, DHCP, Unbound overrides, firewall rules and
 aliases, the Sunshine forwards, the node_exporter plugin, syslog, and on the
 switch the port roles, SNMP and logging.

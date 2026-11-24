@@ -10,7 +10,7 @@ The site network of hgd1: the OPNsense router `hgd1-fw01`, the Aruba switch
 `hgd1-sw01`, five VLANs and the firewall between them. The router and switch
 are configured by hand today; Ansible in this repo
 ([`hgd1-network`](https://github.com/jurrebuunk/hgd1-network)) is
-[planned](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md).
+[planned](reference/roadmap.md).
 
 The hgd1 docs are three sites, each covering only what its repo owns:
 
@@ -90,7 +90,7 @@ flowchart TB
 | VLANs 10, 20, 30, 40, 100 | <span class="status">Done</span> | [Network design](concepts/design.md#vlans) |
 | Firewall policy and WAN forwards | <span class="status">Done</span> | [Firewall](reference/firewall.md) |
 | DNS (Unbound) and NTP | <span class="status">Done</span> | [Network design](concepts/design.md#dns-and-time) |
-| Configuration as Ansible | <span class="status status--planned">Planned</span> | [PLAN.md](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md) |
+| Configuration as Ansible | <span class="status status--planned">Planned</span> | [PLAN.md](reference/roadmap.md) |
 
 ## I want to…
 

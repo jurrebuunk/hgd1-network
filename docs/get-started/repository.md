@@ -16,7 +16,7 @@ README.md
 
 ## Planned layout
 
-From [PLAN.md](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md):
+From [PLAN.md](../reference/roadmap.md):
 
 | Device | Ansible |
 | --- | --- |

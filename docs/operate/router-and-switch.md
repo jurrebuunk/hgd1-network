@@ -6,7 +6,7 @@ icon: lucide/router
 
 What runs on OPNsense and the Aruba switch, and how to reach them. Their
 configuration becomes Ansible in this repo, which also takes the backups
-([plan](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md)); until
+([plan](../reference/roadmap.md)); until
 then it's done by hand, carefully, with a backup first.
 
 !!! info "At a glance"

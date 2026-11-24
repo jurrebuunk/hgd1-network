@@ -43,7 +43,7 @@ nav = [
     "reference/addresses.md",
     "reference/credentials.md",
     "reference/glossary.md",
-    { "Plan ↗" = "https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md" },
+    { "Roadmap" = "reference/roadmap.md" },
   ] },
   # The other two doc sites, in their own colour.
   { "Cluster docs ↗" = "https://jurrebuunk.github.io/nix-hgd1-cluster/" },
@@ -111,8 +111,9 @@ pymdownx.inlinehilite = {}
 pymdownx.keys = {}
 pymdownx.mark = {}
 pymdownx.smartsymbols = {}
-# Glossary terms (includes/abbreviations.md) get a hover tooltip on every page.
-pymdownx.snippets.base_path = ["includes"]
+# Glossary terms (includes/abbreviations.md) get a hover tooltip on every page;
+# "." lets reference/roadmap.md include PLAN.md.
+pymdownx.snippets.base_path = ["includes", "."]
 pymdownx.snippets.auto_append = ["abbreviations.md"]
 pymdownx.superfences.custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },

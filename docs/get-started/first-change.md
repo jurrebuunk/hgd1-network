@@ -39,4 +39,4 @@ dig @10.10.20.1 first-change.lan.buunk.org +short    # 10.10.20.11
 Delete the override, Apply, and check that the name no longer resolves.
 
 When the Ansible exists, the same loop becomes: change a variable, `--check
---diff`, run, check. See [the plan](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md).
+--diff`, run, check. See [the plan](../reference/roadmap.md).

@@ -32,7 +32,7 @@ themselves (hosts, Ceph, S3, k3s, the API), see the cluster docs.
 | You see | Likely cause and fix |
 | --- | --- |
 | A `*.lan.buunk.org` name gives no address | Missing Unbound host override; add it, in step with `inventory.nix` |
-| A made-up `*.lan.buunk.org` name gives NOERROR instead of NXDOMAIN | Known: the zone's local-zone type; see [PLAN.md](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md#known-issues). k3s pods work around it |
+| A made-up `*.lan.buunk.org` name gives NOERROR instead of NXDOMAIN | Known: the zone's local-zone type; see [PLAN.md](../reference/roadmap.md#known-issues). k3s pods work around it |
 | Hosts still resolve each other while the router is down | Expected: they keep each other in `/etc/hosts` |
 
 ## Traffic between VLANs blocked

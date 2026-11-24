@@ -10,7 +10,7 @@ VLANs behind one OPNsense router.
 !!! info "At a glance"
 
     **Status** <span class="status">Done</span> (built by hand; Ansible in this
-    repo is [planned](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md)) ·
+    repo is [planned](../reference/roadmap.md)) ·
     **Addresses** [Addresses](../reference/addresses.md) · **Rules** [Firewall](../reference/firewall.md)
 
 ## Overview
@@ -109,7 +109,7 @@ RDP and discovery are not forwarded.
 
 | What | Where |
 | --- | --- |
-| VLANs, DHCP, DNS overrides, firewall, NAT on OPNsense | This repo (Ansible, [planned](https://github.com/jurrebuunk/hgd1-network/blob/main/PLAN.md)) |
+| VLANs, DHCP, DNS overrides, firewall, NAT on OPNsense | This repo (Ansible, [planned](../reference/roadmap.md)) |
 | VLANs and port roles on the Aruba | This repo |
 | Host and VM addresses | `inventory.nix` in [`nix-hgd1-cluster`](https://github.com/jurrebuunk/nix-hgd1-cluster); keep the DNS overrides here in step with it |
 
