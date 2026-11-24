@@ -13,12 +13,19 @@ edit_uri = "edit/main/docs/"
 copyright = "Jurre Buunk"
 
 nav = [
-  { "Network" = "index.md" },
-  { "Firewall" = "firewall.md" },
-  { "Addresses" = "addresses.md" },
-  { "Router and switch" = "router-and-switch.md" },
-  { "Rebuild" = "rebuild.md" },
-  { "Troubleshooting" = "troubleshooting.md" },
+  { "Home" = "index.md" },
+  { "Concepts" = [
+    "concepts/design.md",
+  ] },
+  { "Reference" = [
+    "reference/firewall.md",
+    "reference/addresses.md",
+  ] },
+  { "Operate" = [
+    "operate/router-and-switch.md",
+    "operate/rebuild.md",
+    "operate/troubleshooting.md",
+  ] },
   # The other two doc sites, in their own colour.
   { "Cluster docs ↗" = "https://jurrebuunk.github.io/nix-hgd1-cluster/" },
   { "Kubernetes docs ↗" = "https://jurrebuunk.github.io/hgd1-k8s/" },

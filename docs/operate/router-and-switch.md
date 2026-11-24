@@ -12,7 +12,7 @@ then it's done by hand, carefully, with a backup first.
 !!! info "At a glance"
 
     **Router** OPNsense 26.7.9_3, `hgd1-fw01` · **Switch** HP/Aruba 2530-48G,
-    `hgd1-sw01`, firmware `YA.16.02.0012` · **Design** [Network](index.md), [Firewall](firewall.md)
+    `hgd1-sw01`, firmware `YA.16.02.0012` · **Design** [Network](../concepts/design.md), [Firewall](../reference/firewall.md)
 
 ## Access
 
@@ -33,8 +33,8 @@ overwrites them.
 | OPNsense | VLAN interfaces 20/40/100, DHCP on mgmt and users, outbound NAT, Unbound with DNSSEC and the host overrides, NTP, the inter-VLAN firewall policy and remote-access aliases, the Sunshine forwards, plugins `os-isc-dhcp`, `os-firewall-legacy` and `os-node_exporter`, syslog to `10.10.20.10` |
 | Aruba | VLANs 10/20/30/40/100/999, port roles, management on `10.10.10.2`, SNTP from OPNsense, key-only SSH, read-only SNMP, syslog to `10.10.20.10` |
 
-The why behind each part is in [Network](index.md) and
-[Firewall](firewall.md); how they feed monitoring is on the cluster docs,
+The why behind each part is in [Network](../concepts/design.md) and
+[Firewall](../reference/firewall.md); how they feed monitoring is on the cluster docs,
 [Monitoring](https://jurrebuunk.github.io/nix-hgd1-cluster/concepts/monitoring/).
 
 ## Changes
@@ -44,7 +44,7 @@ Everything below happens in this repo:
 | Task | Where |
 | --- | --- |
 | DNS host override (new VM, new VIP) | Unbound overrides in its variables; keep them in line with `inventory.nix` in `nix-hgd1-cluster` |
-| Firewall rule or alias | Firewall variables; follow the [policy](firewall.md) |
+| Firewall rule or alias | Firewall variables; follow the [policy](../reference/firewall.md) |
 | Switch port role | Switch variables |
 | Backups | Taken before every run |
 | Firmware updates | Its runbook for OPNsense and the Aruba |
@@ -59,5 +59,5 @@ Everything below happens in this repo:
 
 ## Related
 
-- [Network](index.md) · [Firewall](firewall.md) · [Rebuild the network](rebuild.md)
+- [Network](../concepts/design.md) · [Firewall](../reference/firewall.md) · [Rebuild the network](rebuild.md)
 - On the cluster docs: [Repositories](https://jurrebuunk.github.io/nix-hgd1-cluster/reference/repositories/)

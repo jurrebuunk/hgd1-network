@@ -37,7 +37,7 @@ themselves (hosts, Ceph, S3, k3s, the API), see the cluster docs.
 
 ## Traffic between VLANs blocked
 
-Everything between VLANs is denied unless the [policy](firewall.md) allows
+Everything between VLANs is denied unless the [policy](../reference/firewall.md) allows
 it. Check the rule in OPNsense (Firewall → Log Files → Live View, filter on
 the source address) before changing anything; a new path is a new rule here,
 following the policy.

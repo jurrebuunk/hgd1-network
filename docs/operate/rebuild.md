@@ -23,7 +23,7 @@ very end.
 | N1 | OPNsense base: firmware, hostname, Unbound with DNSSEC, NTP, backup | This repo |
 | N2 | VLAN interfaces 20/40/100, DHCP on mgmt and users, outbound NAT | This repo |
 | N3 | Switch: VLANs, management on `10.10.10.2`, port roles; hypervisor ports stay on VLAN 10 | This repo |
-| N4 | Firewall rules per the [policy](firewall.md); temporary WAN rules stay | This repo |
+| N4 | Firewall rules per the [policy](../reference/firewall.md); temporary WAN rules stay | This repo |
 | N5 | Move each hypervisor to its static addresses, one at a time | [Moving a host](#moving-a-host) |
 | N6 | Verify: inter-VLAN tests from every VLAN, host internet, reboot router and switch | By hand, from test clients |
 | N7 | Remote access, then remove the temporary WAN rules (this repo) | [Remote access](https://jurrebuunk.github.io/nix-hgd1-cluster/concepts/remote-access/#setting-it-up-again) |
@@ -126,5 +126,5 @@ checked that everything came back from saved configuration.
 
 ## Related
 
-- [Network](index.md) · [Router and switch](router-and-switch.md)
+- [Network](../concepts/design.md) · [Router and switch](router-and-switch.md)
 - On the cluster docs: [Disaster recovery](https://jurrebuunk.github.io/nix-hgd1-cluster/operate/disaster-recovery/) (the whole site)
